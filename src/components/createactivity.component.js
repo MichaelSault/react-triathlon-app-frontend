@@ -7,19 +7,6 @@ export default class CreateActivity extends Component {
     
     activitySubmit = event => {
 
-        console.log(document.getElementById('distance').value,
-        document.getElementById('hr').value,
-        document.getElementById('min').value,
-        document.getElementById('sec').value,
-        document.getElementById('elevation').value,
-        document.getElementById('sport').value,
-        document.getElementById('start_date').value,
-        document.getElementById('start_time').value,
-        document.getElementById('title').value,
-        document.getElementById('description').value,
-        document.getElementById('type').value,
-        document.getElementById('effort').value)
-
         //example post request + console log and error catcher
         axios.post('http://localhost:8000/api/activity/activities/', 
         {

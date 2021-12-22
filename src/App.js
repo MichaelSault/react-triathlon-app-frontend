@@ -9,6 +9,7 @@ import Recover from './components/recover.component';
 import Reset from './components/passwordreset.component';
 import Activity from './components/gpx_parser.component';
 import CreateActivity from './components/createactivity.component';
+import ViewActivity from './components/viewactivity.component';
 
 function App() {
   return (<Router>
@@ -33,6 +34,9 @@ function App() {
               <li className="nav-item">
                 <Link className="nav-link" to={"/create-activity"}>Manual Entry</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to={"/view-activity"}>View</Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -48,6 +52,7 @@ function App() {
             <Route path="/reset-password" component={Reset} />
             <Route path="/upload-activity" component={Activity} />
             <Route path="/create-activity" component={CreateActivity} />
+            <Route path="/view-activity" component={ViewActivity} />
           </Switch>
         </div>
       </div>
