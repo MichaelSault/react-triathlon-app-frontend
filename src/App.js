@@ -16,10 +16,10 @@ function App() {
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
         <div className="container">
-          <Link className="navbar-brand" to={"/sign-in"}>michaelsault.ca</Link>
+          <a className="navbar-brand" href='https://michaelsault.ca/'>michaelsault.ca</a> 
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to={"/sign-in"}>Login</Link>
               </li>
               <li className="nav-item">
@@ -30,12 +30,12 @@ function App() {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to={"/upload-activity"}>Activity</Link>
+              </li> */}
+              <li className="nav-item">
+                <Link className="nav-link" to={"/view-activity"}>Recent Activities</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/create-activity"}>Manual Entry</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to={"/view-activity"}>View</Link>
+                <Link className="nav-link" to={"/create-activity"}>New Activity</Link>
               </li>
             </ul>
           </div>
@@ -45,7 +45,7 @@ function App() {
       <div className="auth-wrapper">
         <div className="auth-inner">
           <Switch>
-            <Route exact path='/' component={Login} />
+            <Route exact path='/' component={ViewActivity} />
             <Route path="/sign-in" component={Login} />
             <Route path="/sign-up" component={SignUp} />
             <Route path="/recover-password" component={Recover} />

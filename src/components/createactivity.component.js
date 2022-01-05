@@ -110,7 +110,7 @@ export default class CreateActivity extends Component {
                 </div>
 
                 <div>
-                    <button type="submit" className="btn btn-primary btn-block" onClick={this.activitySubmit}>Log Activity</button>
+                    <button type="submit" className="wide_button" onClick={this.activitySubmit}>Log Activity</button>
                 </div>
 
             </form>

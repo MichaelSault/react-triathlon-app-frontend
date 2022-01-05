@@ -43,7 +43,7 @@ export default class Activity extends Component {
         } else {
             return (
                 <p className="subscript text-right">
-                    Add entry manually?  <a href="sign-in">Click here!</a>
+                    Add entry manually?  <a href="create-activity">Click here!</a>
                 </p>
             );
         }
@@ -53,7 +53,7 @@ export default class Activity extends Component {
     render() {
         return (
             <form>
-                <h3>Upload from .gpx file</h3>
+                <h3>Upload from .gpx file (WIP)</h3>
 
                 <div className="form-group">
                     <label>Upload Activity:</label>
@@ -61,7 +61,7 @@ export default class Activity extends Component {
                 </div>
                 
                 <div>
-                    <button onClick={this.onFileUpload} className="btn btn-primary btn-block">Upload Activity!</button>
+                    <button onClick={this.onFileUpload} className="wide_button">Upload Activity!</button>
                 </div>
                 {this.fileData()}
             </form>
